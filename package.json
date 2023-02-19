@@ -1,0 +1,22 @@
+{
+  "name": "aaha",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/main.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alisq/AAHA.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alisq/AAHA/issues"
+  },
+  "homepage": "https://github.com/alisq/AAHA#readme",
+  "dependencies": {
+    "sass": "^1.57.1"
+  }
+}
