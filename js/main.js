@@ -13,6 +13,11 @@ setInterval(function(){
 },1)
 
 
+$(document).scroll(function(){
+
+    i = $(document).scrolltop()
+})
+
 // Set the date we're counting down to
 var countDownDate = new Date("Mar 15, 2023 12:00:00").getTime();
 
