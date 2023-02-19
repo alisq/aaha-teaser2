@@ -137,22 +137,29 @@ button:visited {
 
 .manifesto {
   font-family: 'AAHA-WEB';
-  text-align: center;
   font-weight: normal;
-  font-size: 5vw;
+  font-size: 10vw;
   line-height: 1em;
   margin: 0;
   padding: 0;
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  transform: translateY(-50%); }
+  width: 100%; }
+  .manifesto #manifesto-intro {
+    text-align: center;
+    color: #c00000;
+    display: block;
+    margin-bottom: 0.5em; }
   .manifesto h2 {
     font-weight: normal;
-    display: inline;
+    text-indent: -0.4em;
+    line-height: 0.9;
+    margin: 0.2em 0.4em 0.2em 1em;
+    text-transform: uppercase;
     font-size: inherit;
     cursor: pointer;
     transition: color 0.4s; }
+    .manifesto h2 .num {
+      display: inline-block;
+      width: 0.4em; }
 
 /**** BEGIN ALT ****/
 .manifesto-2 {
@@ -169,7 +176,6 @@ button:visited {
   .manifesto-2:hover .num {
     color: rgba(60, 60, 60, 0.3); }
   .manifesto-2 h2 {
-    margin-left: -0.4em;
     font-weight: normal;
     font-size: inherit;
     line-height: 0.9;
@@ -177,10 +183,6 @@ button:visited {
     transition: color 0.4s; }
     .manifesto-2 h2:hover {
       color: #c00000; }
-
-.num {
-  display: inline-block;
-  margin-right: 0.1em; }
 
 label,
 .label {
@@ -254,17 +256,17 @@ h1 {
     width: 100%;
     z-index: 1;
     text-align: center;
-    letter-spacing: 0.05em; }
-  h1 .title-top {
-    top: 1em; }
-  h1 .title-bottom {
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 1em;
+    letter-spacing: 0.05em;
     background: #c00000;
     display: inline-block;
     width: auto;
-    padding: 0.25em 0.5em 0.1em; }
+    padding: 0.25em 0.5em 0.1em;
+    left: 50%;
+    transform: translateX(-50%); }
+  h1 .title-top {
+    top: 1em; }
+  h1 .title-bottom {
+    bottom: 1em; }
 
 .title-top.invert,
 .title-bottom.invert {
@@ -482,8 +484,14 @@ ul.actions {
       padding: 0.5em;
       border-bottom: 1px solid #3C3C3C; }
 
-#mobile-logo {
-  display: none; }
+#bottom-logo {
+  display: block;
+  text-align: center; }
+  #bottom-logo svg {
+    display: inline-block;
+    fill: #c00000;
+    width: 15%;
+    margin: 1em; }
 
 @media (max-width: 800px) {
   #menu-button {
@@ -532,14 +540,6 @@ ul.actions {
         display: block; }
       h1.fr .title-top {
         display: none; }
-  #mobile-logo {
-    display: block;
-    text-align: center; }
-    #mobile-logo svg {
-      display: inline-block;
-      fill: #c00000;
-      width: 60px;
-      margin: 1em; }
   .manifesto {
     font-size: 2em;
     text-align: left;

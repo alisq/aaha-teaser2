@@ -145,16 +145,23 @@ button:visited {
 
 .manifesto {
     font-family: 'AAHA-WEB';
-    text-align:center;
+    // text-align:center;
     font-weight:normal;
-    font-size:5vw;
+     font-size:10vw;
     line-height:1em;
     margin:0;
     padding:0;
-    position:absolute;
+    // position:absolute;
     width:100%;
-    top:50%;
-    transform:translateY(-50%);
+    // top:50%;
+    // transform:translateY(-50%);
+
+    & #manifesto-intro {
+        text-align:center;
+        color:$red;
+        display:block;
+        margin-bottom:0.5em;
+    }
 
     &:hover h2, 
     &:hover .num{
@@ -165,10 +172,21 @@ button:visited {
 
     h2 {
         font-weight:normal;
-        display:inline;
+        text-indent: -0.4em;
+        line-height:0.9;
+        margin:0.2em 0.4em 0.2em 1em;
+        text-transform:uppercase;
         font-size:inherit;
         cursor:pointer;
         transition:color $transition-time;
+
+        & .num {
+            
+            display:inline-block;
+            width:0.4em
+            
+        }
+        
 
         &:hover {
             // color:$red;
@@ -204,13 +222,14 @@ button:visited {
 
     h2 {
         
-        margin-left:-0.4em;
+        // margin-left:-0.4em;
         font-weight:normal;
         // display:inline;
         font-size:inherit;
         line-height:0.9;
         cursor:pointer;
         transition:color $transition-time;
+        
 
         &:hover {
             color:$red;
@@ -223,16 +242,6 @@ button:visited {
     
 }
 
-
-.num {
-    // font-size:0.66em;
-    // color:$red;
-    display:inline-block;
-    margin-right:0.1em;
-    // margin-top:-1.333em;
-    // transform:translateY(-0.5em);
-    // font-weight:bold;
-}
 
 
 label,
