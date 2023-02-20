@@ -2,7 +2,7 @@
 
 let i =0;
 
-setInterval(function(){
+let bb = setInterval(function(){
 
     $(document).scrollTo(i)
 
@@ -10,12 +10,18 @@ setInterval(function(){
         i=0;
     }
     i++
-},1)
+},5)
 
-
+// clearInterval(bb)
 $(document).scroll(function(){
 
-    i = $(document).scrolltop()
+
+  if ($(document).scrolltop() == ($(document).height()-$(window).height())) {
+    
+  }
+    //i = $(document).scrolltop()
+
+    //clearInterval(bb)
 })
 
 // Set the date we're counting down to
