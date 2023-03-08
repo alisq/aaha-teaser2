@@ -467,7 +467,7 @@ ul.actions {
 // }
 
 
-#bottom-logo {
+.bottom-logo {
     display:block;
     text-align:center;
     
@@ -482,6 +482,8 @@ ul.actions {
 
 
 @media (max-width:800px) {
+
+
 
     #menu-button {
         top:0.5em;
@@ -590,6 +592,11 @@ ul.actions {
 
 section {
     padding:1rem;
+
+        height:auto;
+        min-height:1px;
+}
+
 }
 
 .container {

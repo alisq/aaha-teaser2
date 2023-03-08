@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/alisq/AAHA#readme",
   "dependencies": {
-    "sass": "^1.57.1"
+    "sass": "^1.58.3"
   }
 }

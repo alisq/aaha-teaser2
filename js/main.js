@@ -1,3 +1,4 @@
+console.log( $("#intro").height()-$(window).height())
 
 
 let i =0;
@@ -5,18 +6,60 @@ let i =0;
 let bb = setInterval(function(){
 
     $(document).scrollTo(i)
+    i++;
+    // if (i >= ($(document).height()-$(window).height())) {
+    //     i=$("#intro").height()-$(window).height()
+    //     $(document).scrollTo(i)
+    //     clearInterval(bb);
+    // }
+    
+},1)
 
-    if (i >= ($(document).height()-$(window).height())) {
-        i=0;
-    }
-    i++
-},5)
 
-// clearInterval(bb)
+$(".title-top").hover(() => {
+  console.log("fff")
+  clearInterval(bb)
+},() => {
+  bb = setInterval(function(){
+
+    $(document).scrollTo(i)
+    i++;
+  
+    
+},1)
+})
+
+//clearInterval(bb)
+
+
+
+$(document).mousedown(() => {
+  clearInterval(bb)
+})
+
+
+
+// $("body").mouseup(() => {
+//   bb = setInterval(function(){
+
+//     $(document).scrollTo(i)
+//     i++;
+  
+    
+// },1)
+// })
+
+
 $(document).scroll(function(){
 
+  console.log("s: "+$(document).scrollTop())
 
-  if ($(document).scrolltop() == ($(document).height()-$(window).height())) {
+  if ($(document).scrollTop() >= $("#outro").offset().top-1) {
+
+    
+      i=0
+      $(document).scrollTo(i)
+      
     
   }
     //i = $(document).scrolltop()
@@ -25,7 +68,7 @@ $(document).scroll(function(){
 })
 
 // Set the date we're counting down to
-var countDownDate = new Date("Mar 15, 2023 12:00:00").getTime();
+var countDownDate = new Date("Mar 29, 2023 12:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
