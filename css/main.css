@@ -514,9 +514,7 @@ ul.actions {
   .manifesto {
     text-transform: uppercase;
     font-size: 30px; 
-      position:absolute;
-      bottom:1em;
-      left:0;
+      
       padding:0.5em;
   }
 
