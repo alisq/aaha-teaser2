@@ -16,7 +16,7 @@ let bb = setInterval(function(){
 },1)
 
 
-$(".title-top").hover(() => {
+$(".title-top, .title-bottom").hover(() => {
   console.log("fff")
   clearInterval(bb)
 },() => {
@@ -39,15 +39,18 @@ $(document).mousedown(() => {
 
 
 
-// $("body").mouseup(() => {
-//   bb = setInterval(function(){
 
-//     $(document).scrollTo(i)
-//     i++;
+
+
+$(document).mouseup(() => {
+  bb = setInterval(function(){
+
+    $(document).scrollTo(i)
+    i++;
   
     
-// },1)
-// })
+},1)
+})
 
 
 $(document).scroll(function(){
